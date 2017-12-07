@@ -6,7 +6,7 @@ const styles ={};
 class SmallLinks extends Component{
     render(){
         return(
-            <Grid container>
+            <Grid container style={{height:"8em",backgroundColor:"#ffffff"}}>
                 <Grid item>
                     <Typography type="title">
                         Small Links

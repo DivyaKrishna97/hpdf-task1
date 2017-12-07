@@ -6,7 +6,7 @@ const styles ={};
 class FollowSuggestions extends Component{
     render(){
         return(
-            <Grid container>
+            <Grid container style={{height:"18em",backgroundColor:"#ffffff"}}>
                 <Grid item>
                     <Typography type="title">
                         Follow Suggestions

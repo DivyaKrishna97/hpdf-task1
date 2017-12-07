@@ -7,7 +7,7 @@ const styles ={};
 class Trends extends Component{
     render(){
         return(
-            <Grid container>
+            <Grid container style={{height:"50vh",backgroundColor:"#ffffff"}}>
                 <Grid item>
                     <Typography type="title">
                         Trends Grid

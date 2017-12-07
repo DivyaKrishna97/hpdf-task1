@@ -6,8 +6,8 @@ const styles ={};
 class Feed extends Component{
     render(){
         return(
-            <Grid container>
-                <Grid item>
+            <Grid container direction="column">
+                <Grid item style={{backgroundColor:"#ffffff",height:"70vh"}}>
                     <Typography type="title">
                         News Feed
                     </Typography>
