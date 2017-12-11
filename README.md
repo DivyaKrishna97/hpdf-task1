@@ -1,6 +1,12 @@
 
 ## HPDF Task 1 (ReactJS Front End)
 
+<p align="center">
+  <img src="large-screen.png" width="235" />
+  <img src="sc-1.png" height="235" />
+  <img src="sc-1.png" height="235" />
+</p>
+
 ###To Do
 **Create a twitter account to use as reference and use [Material UI](http://www.material-ui.com) to create a new ReactJS app with only the following pages:**
 * [Twitter timeline](https://twitter.com)
