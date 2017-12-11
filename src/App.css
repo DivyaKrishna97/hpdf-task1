@@ -33,3 +33,98 @@ body{
   background-color: #e6ecf0;
   overflow-x: hidden;
 }
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.navSearch{
+  display: block;
+  outline: 0;
+  width: 100%;
+  height: 65%;
+  background-color: #f5f8fa;
+  border: 1px solid #e6ecf0;
+  border-radius: 40px;
+  font-size: 12px;
+  color: #14171a;
+  padding-left: 10px;
+}
+
+.navSearch:focus{
+  background-color: #ffffff;
+  border: 2px solid #1da1f2;
+}
+.searchMe{
+  position: relative;
+  display: inline-block;
+}
+.searchMe .fa-search{
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.tweetStats:hover{
+  color:#1da1f2;
+}
+
+.hoverLink:hover{
+  cursor:pointer;
+  text-decoration: underline;
+}
+.refContainer{
+  background-color: #f5f8fa;
+}
+.refContainer:hover{
+  background-color: #f4f4f4;
+  cursor:pointer;
+}
+.refreshTweets{
+  color:#1da1f2 !important;
+  cursor:pointer;
+}
+.refreshTweets:hover{
+}
+.feedGrid:hover{
+  cursor:pointer;
+  background-color: #e6ecf0;
+}
+.feedAuthor:hover{
+  cursor:pointer;
+  color:#1da1f2 !important;
+  text-decoration: underline;
+}
+
+.cardAction:hover{
+  cursor:pointer;
+  color:#1da1f2 !important;
+}
+
+.followMe:hover{
+  cursor:pointer;
+  color:#1da1f2 !important;
+  text-decoration: underline;
+}
+
+.smallLinks{
+  float: left;
+  padding-right: 8px;
+}
+
+.smallLinks:hover{
+  cursor:pointer;
+  text-decoration: underline;
+}
+
+.advertiseLink:hover{
+  text-decoration: underline;
+  cursor:pointer;
+  color:#1da1f2 !important;
+}

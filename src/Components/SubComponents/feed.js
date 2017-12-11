@@ -5,6 +5,7 @@ import 'font-awesome/css/font-awesome.min.css'
 import Button from 'material-ui/Button'
 import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import Grid from 'material-ui/Grid'
+import Tooltip from 'material-ui/Tooltip'
 import Avatar from 'material-ui/Avatar'
 import Typography from 'material-ui/Typography'
 const styles ={};
@@ -13,7 +14,7 @@ class Feed extends Component{
         return(
             <Grid container direction="column" style={{backgroundColor:"#ffffff"}}>
                 <Grid item style={{borderBottom:"1px solid #efe6e6"}}>
-                    <Grid container>
+                    <Grid container className="feedGrid">
                         <Grid item>
                             <Avatar>
                                 J
@@ -24,7 +25,7 @@ class Feed extends Component{
                                 <Grid item style={{paddingBottom:0}}>
                                     <Grid container>
                                         <Grid item>
-                                            <Typography type="body2">
+                                            <Typography type="body2" className="feedAuthor">
                                                 India TV
                                             </Typography>
                                         </Grid>
@@ -41,35 +42,43 @@ class Feed extends Component{
                                     </Typography>
                                 </Grid>
                                 <Grid item>
-                                    <Card style={{boxShadow:"none"}}>
-                                        <CardMedia image={dummy} style={{height:"400px",width:"490px"}}/>
+                                    <Card style={{boxShadow:"none",width:"490px"}}>
+                                        <CardMedia image={dummy} style={{height:"400px"}}/>
                                         <CardActions>
                                             <Grid container>
                                                 <Grid item xs={2}>
-                                                    <i className="fa fa-comment-o" aria-hidden="true">
-                                                    </i>
-                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}}>
+                                                    <Tooltip title="Reply">
+                                                        <i className="fa fa-comment-o cardAction" aria-hidden="true">
+                                                        </i>
+                                                    </Tooltip>
+                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}} className="cardAction">
                                                         &nbsp;&nbsp;11
                                                     </span>
                                                 </Grid>
                                                 <Grid item xs={2}>
-                                                    <i className="fa fa-retweet" aria-hidden="true">
-                                                    </i>
-                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}}>
+                                                    <Tooltip title="Retweet">
+                                                        <i className="fa fa-retweet cardAction" aria-hidden="true">
+                                                        </i>
+                                                    </Tooltip>
+                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}} className="cardAction">
                                                         &nbsp;&nbsp;11
                                                     </span>
                                                 </Grid>
                                                 <Grid item xs={2}>
-                                                    <i className="fa fa-heart-o" aria-hidden="true">
-                                                    </i>
-                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}}>
+                                                    <Tooltip title="Like">
+                                                        <i className="fa fa-heart-o cardAction" aria-hidden="true">
+                                                        </i>
+                                                    </Tooltip>
+                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}} className="cardAction">
                                                         &nbsp;&nbsp;11
                                                     </span>
                                                 </Grid>
                                                 <Grid item xs={2}>
-                                                    <i className="fa fa-envelope-o" aria-hidden="true">
+                                                    <Tooltip title="Direct Message">
+                                                        <i className="fa fa-envelope-o cardAction" aria-hidden="true">
                                                     </i>
-                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}}>
+                                                    </Tooltip>
+                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}} className="cardAction">
                                                         &nbsp;&nbsp;11
                                                     </span>
                                                 </Grid>
@@ -84,9 +93,7 @@ class Feed extends Component{
                             </i>
                         </Grid>
                     </Grid>
-                </Grid>
-                <Grid item style={{borderBottom:"1px solid #efe6e6"}}>
-                    <Grid container>
+                    <Grid container className="feedGrid">
                         <Grid item>
                             <Avatar>
                                 J
@@ -97,7 +104,7 @@ class Feed extends Component{
                                 <Grid item style={{paddingBottom:0}}>
                                     <Grid container>
                                         <Grid item>
-                                            <Typography type="body2">
+                                            <Typography type="body2" className="feedAuthor">
                                                 India TV
                                             </Typography>
                                         </Grid>
@@ -114,35 +121,43 @@ class Feed extends Component{
                                     </Typography>
                                 </Grid>
                                 <Grid item>
-                                    <Card style={{boxShadow:"none"}}>
-                                        <CardMedia image={dummy} style={{height:"400px",width:"490px"}}/>
+                                    <Card style={{boxShadow:"none",width:"490px"}}>
+                                        <CardMedia image={dummy} style={{height:"400px"}}/>
                                         <CardActions>
                                             <Grid container>
                                                 <Grid item xs={2}>
-                                                    <i className="fa fa-comment-o" aria-hidden="true">
-                                                    </i>
-                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}}>
+                                                    <Tooltip title="Reply">
+                                                        <i className="fa fa-comment-o cardAction" aria-hidden="true">
+                                                        </i>
+                                                    </Tooltip>
+                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}} className="cardAction">
                                                         &nbsp;&nbsp;11
                                                     </span>
                                                 </Grid>
                                                 <Grid item xs={2}>
-                                                    <i className="fa fa-retweet" aria-hidden="true">
-                                                    </i>
-                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}}>
+                                                    <Tooltip title="Retweet">
+                                                        <i className="fa fa-retweet cardAction" aria-hidden="true">
+                                                        </i>
+                                                    </Tooltip>
+                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}} className="cardAction">
                                                         &nbsp;&nbsp;11
                                                     </span>
                                                 </Grid>
                                                 <Grid item xs={2}>
-                                                    <i className="fa fa-heart-o" aria-hidden="true">
-                                                    </i>
-                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}}>
+                                                    <Tooltip title="Like">
+                                                        <i className="fa fa-heart-o cardAction" aria-hidden="true">
+                                                        </i>
+                                                    </Tooltip>
+                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}} className="cardAction">
                                                         &nbsp;&nbsp;11
                                                     </span>
                                                 </Grid>
                                                 <Grid item xs={2}>
-                                                    <i className="fa fa-envelope-o" aria-hidden="true">
-                                                    </i>
-                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}}>
+                                                    <Tooltip title="Direct Message">
+                                                        <i className="fa fa-envelope-o cardAction" aria-hidden="true">
+                                                        </i>
+                                                    </Tooltip>
+                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}} className="cardAction">
                                                         &nbsp;&nbsp;11
                                                     </span>
                                                 </Grid>
@@ -157,9 +172,7 @@ class Feed extends Component{
                             </i>
                         </Grid>
                     </Grid>
-                </Grid>
-                <Grid item style={{borderBottom:"1px solid #efe6e6"}}>
-                    <Grid container>
+                    <Grid container className="feedGrid">
                         <Grid item>
                             <Avatar>
                                 J
@@ -170,7 +183,7 @@ class Feed extends Component{
                                 <Grid item style={{paddingBottom:0}}>
                                     <Grid container>
                                         <Grid item>
-                                            <Typography type="body2">
+                                            <Typography type="body2" className="feedAuthor">
                                                 India TV
                                             </Typography>
                                         </Grid>
@@ -187,35 +200,43 @@ class Feed extends Component{
                                     </Typography>
                                 </Grid>
                                 <Grid item>
-                                    <Card style={{boxShadow:"none"}}>
-                                        <CardMedia image={dummy} style={{height:"400px",width:"490px"}}/>
+                                    <Card style={{boxShadow:"none",width:"490px"}}>
+                                        <CardMedia image={dummy} style={{height:"400px"}}/>
                                         <CardActions>
                                             <Grid container>
                                                 <Grid item xs={2}>
-                                                    <i className="fa fa-comment-o" aria-hidden="true">
-                                                    </i>
-                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}}>
+                                                    <Tooltip title="Reply">
+                                                        <i className="fa fa-comment-o cardAction" aria-hidden="true">
+                                                        </i>
+                                                    </Tooltip>
+                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}} className="cardAction">
                                                         &nbsp;&nbsp;11
                                                     </span>
                                                 </Grid>
                                                 <Grid item xs={2}>
-                                                    <i className="fa fa-retweet" aria-hidden="true">
-                                                    </i>
-                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}}>
+                                                    <Tooltip title="Retweet">
+                                                        <i className="fa fa-retweet cardAction" aria-hidden="true">
+                                                        </i>
+                                                    </Tooltip>
+                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}} className="cardAction">
                                                         &nbsp;&nbsp;11
                                                     </span>
                                                 </Grid>
                                                 <Grid item xs={2}>
-                                                    <i className="fa fa-heart-o" aria-hidden="true">
-                                                    </i>
-                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}}>
+                                                    <Tooltip title="Like">
+                                                        <i className="fa fa-heart-o cardAction" aria-hidden="true">
+                                                        </i>
+                                                    </Tooltip>
+                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}} className="cardAction">
                                                         &nbsp;&nbsp;11
                                                     </span>
                                                 </Grid>
                                                 <Grid item xs={2}>
-                                                    <i className="fa fa-envelope-o" aria-hidden="true">
-                                                    </i>
-                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}}>
+                                                    <Tooltip title="Direct Message">
+                                                        <i className="fa fa-envelope-o cardAction" aria-hidden="true">
+                                                        </i>
+                                                    </Tooltip>
+                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}} className="cardAction">
                                                         &nbsp;&nbsp;11
                                                     </span>
                                                 </Grid>
@@ -230,9 +251,7 @@ class Feed extends Component{
                             </i>
                         </Grid>
                     </Grid>
-                </Grid>
-                <Grid item style={{borderBottom:"1px solid #efe6e6"}}>
-                    <Grid container>
+                    <Grid container className="feedGrid">
                         <Grid item>
                             <Avatar>
                                 J
@@ -243,7 +262,7 @@ class Feed extends Component{
                                 <Grid item style={{paddingBottom:0}}>
                                     <Grid container>
                                         <Grid item>
-                                            <Typography type="body2">
+                                            <Typography type="body2" className="feedAuthor">
                                                 India TV
                                             </Typography>
                                         </Grid>
@@ -260,35 +279,43 @@ class Feed extends Component{
                                     </Typography>
                                 </Grid>
                                 <Grid item>
-                                    <Card style={{boxShadow:"none"}}>
-                                        <CardMedia image={dummy} style={{height:"400px",width:"490px"}}/>
+                                    <Card style={{boxShadow:"none",width:"490px"}}>
+                                        <CardMedia image={dummy} style={{height:"400px"}}/>
                                         <CardActions>
                                             <Grid container>
                                                 <Grid item xs={2}>
-                                                    <i className="fa fa-comment-o" aria-hidden="true">
-                                                    </i>
-                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}}>
+                                                    <Tooltip title="Reply">
+                                                        <i className="fa fa-comment-o cardAction" aria-hidden="true">
+                                                        </i>
+                                                    </Tooltip>
+                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}} className="cardAction">
                                                         &nbsp;&nbsp;11
                                                     </span>
                                                 </Grid>
                                                 <Grid item xs={2}>
-                                                    <i className="fa fa-retweet" aria-hidden="true">
-                                                    </i>
-                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}}>
+                                                    <Tooltip title="Retweet">
+                                                        <i className="fa fa-retweet cardAction" aria-hidden="true">
+                                                        </i>
+                                                    </Tooltip>
+                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}} className="cardAction">
                                                         &nbsp;&nbsp;11
                                                     </span>
                                                 </Grid>
                                                 <Grid item xs={2}>
-                                                    <i className="fa fa-heart-o" aria-hidden="true">
-                                                    </i>
-                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}}>
+                                                    <Tooltip title="Like">
+                                                        <i className="fa fa-heart-o cardAction" aria-hidden="true">
+                                                        </i>
+                                                    </Tooltip>
+                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}} className="cardAction">
                                                         &nbsp;&nbsp;11
                                                     </span>
                                                 </Grid>
                                                 <Grid item xs={2}>
-                                                    <i className="fa fa-envelope-o" aria-hidden="true">
-                                                    </i>
-                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}}>
+                                                    <Tooltip title="Direct Message">
+                                                        <i className="fa fa-envelope-o cardAction" aria-hidden="true">
+                                                        </i>
+                                                    </Tooltip>
+                                                    <span style={{fontSize:"12px",color:"grey",fontWeight:600}} className="cardAction">
                                                         &nbsp;&nbsp;11
                                                     </span>
                                                 </Grid>

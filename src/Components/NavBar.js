@@ -10,25 +10,32 @@ import 'font-awesome/css/font-awesome.min.css'
 import Tabs, { Tab } from 'material-ui/Tabs';
 import {blue} from 'material-ui/colors';
 const styles={
-    navSearch:{
-        display: "block",
-        outline: 0,
-        width: "100%",
-        height: "65%",
-        backgroundColor: "#efefef",
-        border: "none",
-        borderRadius: "40px",
-        fontSize: "0.8em",
-        color: "#4d5259",
-        fontWeight: 600,
-        paddingLeft: "10px",
-        transition: "border-color ease-in-out .15s, box-shadow ease-in-out .15s"
+    tweetButton:{
+        backgroundColor: "#1da1f2",
+        color:"#ffffff",
+        padding: 0,
+        minHeight: "38px",
+        border: "1px solid",
+        borderRadius: "20px",
+        textTransform:"none",
+        fontSize:"13px"
     }
 };
 const primary = blue[500]; // #F44336
 class NavBar extends Component{
-    state = {
-        value: 0,
+    constructor(props){
+        super(props);
+        this.state ={
+            value: 0,
+        };
+        this.handleChange = this.handleChange.bind(this)
+        this.searchIt = this.searchIt.bind(this);
+    }
+    searchIt = (event)=>{
+        let code = event.keyCode || event.which;
+        if(code===13){
+            console.log("Searching")
+        }
     };
     handleChange = (event, value) => {
         this.setState({ value });
@@ -52,17 +59,19 @@ class NavBar extends Component{
                             <i className="fa fa-twitter" style={{color:"#1da1f2",fontSize:"22px"}}>
                             </i>
                         </Grid>
-                        <Grid item xs={2} style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
-                            <input type="text" className={classes.navSearch} placeholder="Search" spellCheck="false" autoComplete="false" contentEditable="false"/>
+                        <Grid item xs={2} className="searchMe" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+                            <input type="text" className="navSearch" placeholder="Search Twitter" spellCheck="false" autoComplete="false" contentEditable="false" onKeyPress={this.searchIt}/>
+                            <span className="fa fa-search" aria-hidden="true">
+                            </span>
                         </Grid>
-                        <Grid item style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+                        <Grid item  xs={1} style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
                             <Avatar>
                                 J
                             </Avatar>
                         </Grid>
                         <Grid item style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
-                            <Button raised color="primary" className={classes.button}>
-                                Primary
+                            <Button  color="primary" className={classes.tweetButton}>
+                                Tweet
                             </Button>
                         </Grid>
                     </Grid>

@@ -29,7 +29,7 @@ class FollowSuggestions extends Component{
                         </Grid>
                         <Grid item style={{display:"flex",alignItems:"flex-end",paddingLeft:0}}>
                             <Typography type="caption">
-                                . Refresh . View all
+                                <a>. Refresh </a>. <a>View all</a>
                             </Typography>
                         </Grid>
                     </Grid>
@@ -48,7 +48,7 @@ class FollowSuggestions extends Component{
                                       <Grid item style={{paddingBottom:0}}>
                                           <Grid container>
                                               <Grid item>
-                                                  <Typography type="body2">
+                                                  <Typography type="body2" className="followMe">
                                                       India TV
                                                   </Typography>
                                               </Grid>
@@ -84,7 +84,7 @@ class FollowSuggestions extends Component{
                                         <Grid item style={{paddingBottom:0}}>
                                             <Grid container>
                                                 <Grid item>
-                                                    <Typography type="body2">
+                                                    <Typography type="body2" className="followMe">
                                                         India TV
                                                     </Typography>
                                                 </Grid>
@@ -120,43 +120,7 @@ class FollowSuggestions extends Component{
                                         <Grid item style={{paddingBottom:0}}>
                                             <Grid container>
                                                 <Grid item>
-                                                    <Typography type="body2">
-                                                        India TV
-                                                    </Typography>
-                                                </Grid>
-                                                <Grid item style={{display:"flex",alignItems:"center",paddingLeft:0}}>
-                                                    <Typography type="caption">
-                                                        @indiatvnews
-                                                    </Typography>
-                                                </Grid>
-                                            </Grid>
-                                        </Grid>
-                                        <Grid item style={{paddingTop:0,paddingLeft:0}}>
-                                            <Button color="primary" className={classes.followButton}>
-                                                Follow
-                                            </Button>
-                                        </Grid>
-                                    </Grid>
-                                </Grid>
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                </Grid>
-                <Grid item>
-                    <Grid container>
-                        <Grid item style={{borderBottom:"1px solid #efe6e6"}}>
-                            <Grid container>
-                                <Grid item>
-                                    <Avatar>
-                                        J
-                                    </Avatar>
-                                </Grid>
-                                <Grid item>
-                                    <Grid container direction="column">
-                                        <Grid item style={{paddingBottom:0}}>
-                                            <Grid container>
-                                                <Grid item>
-                                                    <Typography type="body2">
+                                                    <Typography type="body2" className="followMe">
                                                         India TV
                                                     </Typography>
                                                 </Grid>
