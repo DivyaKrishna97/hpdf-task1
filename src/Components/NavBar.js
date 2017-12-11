@@ -35,7 +35,7 @@ class NavBar extends Component{
     searchIt = (event)=>{
         let code = event.keyCode || event.which;
         if(code===13){
-            console.log(this.state.searchString);
+            // console.log(this.state.searchString);
             this.setState({redirect:true})
         }
     };
@@ -49,7 +49,10 @@ class NavBar extends Component{
     }
     render(){
         if(this.state.redirect){
-            return <Redirect push to="/search"/>;
+            return <Redirect push to={{
+                pathname:"/search",
+                state:{string:this.state.searchString}
+            }}/>;
         }
         const classes = this.props.classes;
         return(

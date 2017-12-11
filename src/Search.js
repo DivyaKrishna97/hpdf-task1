@@ -12,6 +12,10 @@ const styles={
     }
 };
 class Search extends Component {
+
+    componentDidMount(){
+     console.log(this.props.location.state.string);
+    }
     render() {
         const classes = this.props.classes;
         return (
