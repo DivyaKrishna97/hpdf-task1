@@ -4,11 +4,10 @@ import AppBar from 'material-ui/AppBar'
 import Grid from 'material-ui/Grid'
 import Avatar from 'material-ui/Avatar'
 import Button from 'material-ui/Button'
-/*import Toolbar from 'material-ui/Toolbar'
-import Typography from 'material-ui/Typography'*/
 import 'font-awesome/css/font-awesome.min.css'
 import Tabs, { Tab } from 'material-ui/Tabs';
 import {blue} from 'material-ui/colors';
+import {Redirect} from 'react-router-dom'
 const styles={
     tweetButton:{
         backgroundColor: "#1da1f2",
@@ -27,20 +26,31 @@ class NavBar extends Component{
         super(props);
         this.state ={
             value: 0,
+            searchString:'',
+            redirect:false,
         };
-        this.handleChange = this.handleChange.bind(this)
+        this.handleChange = this.handleChange.bind(this);
         this.searchIt = this.searchIt.bind(this);
     }
     searchIt = (event)=>{
         let code = event.keyCode || event.which;
         if(code===13){
-            console.log("Searching")
+            console.log(this.state.searchString);
+            this.setState({redirect:true})
         }
     };
     handleChange = (event, value) => {
         this.setState({ value });
     };
+    updateInputVal(evt){
+        this.setState({
+            searchString:evt.target.value
+        })
+    }
     render(){
+        if(this.state.redirect){
+            return <Redirect push to="/search"/>;
+        }
         const classes = this.props.classes;
         return(
             <div>
@@ -60,7 +70,8 @@ class NavBar extends Component{
                             </i>
                         </Grid>
                         <Grid item xs={2} className="searchMe" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
-                            <input type="text" className="navSearch" placeholder="Search Twitter" spellCheck="false" autoComplete="false" contentEditable="false" onKeyPress={this.searchIt}/>
+                            <input type="text" value={this.state.searchString} className="navSearch" placeholder="Search Twitter" spellCheck="false" autoComplete="false" contentEditable="false" onKeyPress={this.searchIt} onChange={evt=>this.updateInputVal(evt)}
+                            />
                             <span className="fa fa-search" aria-hidden="true">
                             </span>
                         </Grid>
