@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5ffb240a-9a63-4e72-956e-4ebb4e3efa2c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Search.js" afterPath="$PROJECT_DIR$/src/Search.js" />
+      <change beforePath="$PROJECT_DIR$/src/Components/NavBar.js" afterPath="$PROJECT_DIR$/src/Components/NavBar.js" />
+      <change beforePath="$PROJECT_DIR$/src/SearchComponents/NavBar.js" afterPath="$PROJECT_DIR$/src/SearchComponents/NavBar.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,24 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Search.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Search.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#1613#2368#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NavBar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SearchComponents/NavBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="97" column="52" lean-forward="true" selection-start-line="97" selection-start-column="52" selection-end-line="97" selection-end-column="52" />
+            <state relative-caret-position="252">
+              <caret line="71" column="71" lean-forward="true" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="79" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -42,28 +30,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CenterPane.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SearchComponents/CenterPane.js">
+      <file leaf-file-name="NavBar.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Components/NavBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feed.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SearchComponents/SubComponents/feed.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="257" column="23" lean-forward="false" selection-start-line="257" selection-start-column="23" selection-end-line="257" selection-end-column="23" />
+            <state relative-caret-position="215">
+              <caret line="65" column="89" lean-forward="false" selection-start-line="65" selection-start-column="89" selection-end-line="65" selection-end-column="89" />
               <folding>
-                <element signature="e#642#5872#0" expanded="false" />
-                <element signature="e#717#5848#0" expanded="false" />
-                <element signature="e#5889#11123#0" expanded="false" />
-                <element signature="e#5964#11099#0" expanded="false" />
-                <element signature="e#11140#16374#0" expanded="false" />
-                <element signature="e#11215#16350#0" expanded="false" />
+                <element signature="e#0#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,6 +64,9 @@
       <find>class</find>
       <find>class=</find>
       <find>conso</find>
+      <find>&lt;Tab</find>
+      <find>fa fa-</find>
+      <find>handleChan</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;/li</replace>
@@ -116,13 +92,13 @@
         <option value="$PROJECT_DIR$/src/Components/Search.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/Components/NavBar.js" />
         <option value="$PROJECT_DIR$/src/SearchComponents/SubComponents/user-info.js" />
         <option value="$PROJECT_DIR$/src/SearchComponents/LeftPane.js" />
-        <option value="$PROJECT_DIR$/src/SearchComponents/NavBar.js" />
         <option value="$PROJECT_DIR$/src/Search.js" />
         <option value="$PROJECT_DIR$/src/SearchComponents/CenterPane.js" />
         <option value="$PROJECT_DIR$/src/SearchComponents/SubComponents/feed.js" />
+        <option value="$PROJECT_DIR$/src/SearchComponents/NavBar.js" />
+        <option value="$PROJECT_DIR$/src/Components/NavBar.js" />
       </list>
     </option>
   </component>
@@ -212,6 +188,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="task-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SearchComponents" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -255,12 +237,12 @@
       <workItem from="1512566334392" duration="1292000" />
       <workItem from="1512648137975" duration="17893000" />
       <workItem from="1512956856429" duration="231000" />
-      <workItem from="1512957521509" duration="39817000" />
+      <workItem from="1512957521509" duration="41110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59233000" />
+    <option name="totallyTimeSpent" value="60526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -345,9 +327,9 @@
         <state relative-caret-position="432">
           <caret line="31" column="59" lean-forward="false" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
           <folding>
-            <element signature="e#0#40#0" expanded="false" />
+            <element signature="e#0#40#0" expanded="true" />
             <element signature="e#244#290#0" expanded="false" />
-            <element signature="e#1951#2418#0" expanded="false" />
+            <element signature="e#1951#2449#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -376,9 +358,9 @@
         <state relative-caret-position="432">
           <caret line="31" column="59" lean-forward="false" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
           <folding>
-            <element signature="e#0#40#0" expanded="false" />
+            <element signature="e#0#40#0" expanded="true" />
             <element signature="e#244#290#0" expanded="false" />
-            <element signature="e#1951#2418#0" expanded="false" />
+            <element signature="e#1951#2449#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -595,17 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/NavBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-            <element signature="e#1951#2418#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SearchComponents/SubComponents/user-info.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -643,27 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SearchComponents/NavBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="97" column="52" lean-forward="true" selection-start-line="97" selection-start-column="52" selection-end-line="97" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#1613#2368#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SearchComponents/CenterPane.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -674,8 +624,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SearchComponents/SubComponents/feed.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="257" column="23" lean-forward="false" selection-start-line="257" selection-start-column="23" selection-end-line="257" selection-end-column="23" />
+        <state relative-caret-position="252">
+          <caret line="263" column="26" lean-forward="false" selection-start-line="263" selection-start-column="26" selection-end-line="263" selection-end-column="26" />
           <folding>
             <element signature="e#642#5872#0" expanded="false" />
             <element signature="e#717#5848#0" expanded="false" />
@@ -683,6 +633,37 @@
             <element signature="e#5964#11099#0" expanded="false" />
             <element signature="e#11140#16374#0" expanded="false" />
             <element signature="e#11215#16350#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#1613#2368#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SearchComponents/NavBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="71" column="71" lean-forward="true" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/NavBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="65" column="89" lean-forward="false" selection-start-line="65" selection-start-column="89" selection-end-line="65" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -63,7 +63,7 @@ class NavBar extends Component{
                         </Grid>
                         <Grid item>
                             <Tabs value={this.state.value} style={{color:primary}} indicatorColor={primary} fullWidth={false} onChange={this.handleChange}>
-                                <Tab label="Home" style={{minWidth:0}}/>
+                                <Tab label="Home" style={{minWidth:0,textDecoration:"none"}} href="/"/>
                                 <Tab label="Notifications" style={{minWidth:0}}/>
                                 <Tab label="Messages" style={{minWidth:0}}/>
                             </Tabs>

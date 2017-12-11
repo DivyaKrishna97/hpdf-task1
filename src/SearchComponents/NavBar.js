@@ -27,10 +27,12 @@ class NavBar extends Component{
         super(props);
         this.state ={
             value: 0,
+            subValue:0,
             searchString:'',
             redirect:false,
         };
         this.handleChange = this.handleChange.bind(this);
+        this.handleSub = this.handleSub.bind(this);
         this.searchIt = this.searchIt.bind(this);
     }
     searchIt = (event)=>{
@@ -40,8 +42,11 @@ class NavBar extends Component{
             this.setState({redirect:true})
         }
     };
-    handleChange = (event, value) => {
+    handleChange = (event, value,subValue) => {
         this.setState({ value });
+    };
+    handleSub = (event,subValue) => {
+        this.setState({ subValue });
     };
     updateInputVal(evt){
         this.setState({
@@ -64,7 +69,7 @@ class NavBar extends Component{
                         </Grid>
                         <Grid item>
                             <Tabs value={this.state.value} style={{color:primary}} indicatorColor={primary} fullWidth={false} onChange={this.handleChange}>
-                                <Tab label="Home" style={{minWidth:0}}/>
+                                <Tab label="Home" style={{minWidth:0}} href="/"/>
                                 <Tab label="Notifications" style={{minWidth:0}}/>
                                 <Tab label="Messages" style={{minWidth:0}}/>
                             </Tabs>
@@ -97,6 +102,20 @@ class NavBar extends Component{
                         <Typography type="display1" style={{color:"#ffffff"}}>
                             {this.props.searchQuery}
                         </Typography>
+                    </Grid>
+                </Grid>
+                <Grid container style={{backgroundColor:"#ffffff",paddingBottom:0}}>
+                    <Grid item xs={1}></Grid>
+                    <Grid item xs={10} style={{display:"flex",alignItems:"center",paddingBottom:0}}>
+                        <Tabs value={this.state.subValue} style={{color:primary}} indicatorColor={primary} fullWidth={false} onChange={this.handleSub}>
+                            <Tab label="Top" style={{minWidth:0}}/>
+                            <Tab label="Latest" style={{minWidth:0}}/>
+                            <Tab label="People" style={{minWidth:0}}/>
+                            <Tab label="Photos" style={{minWidth:0}}/>
+                            <Tab label="Videos" style={{minWidth:0}}/>
+                            <Tab label="News" style={{minWidth:0}}/>
+                            <Tab label="Broadcasts" style={{minWidth:0}}/>
+                        </Tabs>
                     </Grid>
                 </Grid>
             </div>
