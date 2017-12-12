@@ -7,7 +7,7 @@
   <img src="sc-1.png" height="235" />
 </p>
 
-###To Do
+### To Do
 **Create a twitter account to use as reference and use [Material UI](http://www.material-ui.com) to create a new ReactJS app with only the following pages:**
 * [Twitter timeline](https://twitter.com)
 * [Twitter Search Results](https://twitter.com/search?q=aadhaar)
