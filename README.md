@@ -2,7 +2,6 @@
 ## HPDF Task 1 (ReactJS Front End)
 
 <p align="center">
-  <img src="large-screen.png" width="235" />
   <img src="sc-1.png" height="235" />
   <img src="sc-1.png" height="235" />
 </p>
