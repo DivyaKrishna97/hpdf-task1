@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="sc-1.png" height="235" />
-  <img src="sc-1.png" height="235" />
+  <img src="sc-2.png" height="235" />
 </p>
 
 ### To Do
